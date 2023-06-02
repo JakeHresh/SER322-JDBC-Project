@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestControllerClass">
+   <children>
+      <AnchorPane prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <PieChart fx:id="piechart" layoutX="326.0" layoutY="61.0" prefHeight="256.0" prefWidth="299.0" />
+            <Button layoutX="36.0" layoutY="317.0" mnemonicParsing="false" onAction="#searchSongByGenre" text="Search Song by Genre">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield11" alignment="CENTER" layoutX="19.0" layoutY="292.0" prefHeight="20.0" prefWidth="135.0" promptText="Genre" />
+            <Button layoutX="173.0" layoutY="317.0" mnemonicParsing="false" onAction="#searchSongByLanguage" text="Search Song by Language">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield13" alignment="CENTER" layoutX="162.0" layoutY="292.0" prefHeight="26.0" prefWidth="138.0" promptText="Language" />
+            <Button layoutX="19.0" layoutY="263.0" mnemonicParsing="false" onAction="#searchSongByFeaturedArtistName" text="Search Song by Featured Artist">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield9" alignment="CENTER" layoutX="19.0" layoutY="238.0" prefHeight="20.0" prefWidth="135.0" promptText="Featured Artist" />
+            <Button layoutX="25.0" layoutY="209.0" mnemonicParsing="false" onAction="#searchSongByName" text="Search Song by Song Name">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield7" alignment="CENTER" layoutX="19.0" layoutY="183.0" prefHeight="20.0" prefWidth="135.0" promptText="Song Name" />
+            <Button layoutX="168.0" layoutY="263.0" mnemonicParsing="false" onAction="#searchSongByMusicVideo" text="Search Song by Music Video">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield10" alignment="CENTER" layoutX="163.0" layoutY="238.0" prefHeight="20.0" prefWidth="135.0" promptText="Music Video" />
+            <Button layoutX="169.0" layoutY="209.0" mnemonicParsing="false" onAction="#searchSongByArtistName" text="Search Song by Artist Name">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield8" alignment="CENTER" layoutX="163.0" layoutY="184.0" prefHeight="20.0" prefWidth="135.0" promptText="Artist Name" />
+            <Button layoutX="14.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchAlbumByPublisherName" text="Search Album by Publisher Name">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield5" alignment="CENTER" layoutX="19.0" layoutY="128.0" prefHeight="20.0" prefWidth="135.0" promptText="Publisher Name" />
+            <Button layoutX="170.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchAlbumByLanguage" text="Search Album by Language">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield6" alignment="CENTER" layoutX="163.0" layoutY="128.0" prefHeight="20.0" prefWidth="135.0" promptText="Language" />
+            <Button layoutX="22.0" layoutY="98.0" mnemonicParsing="false" onAction="#searchAlbumBySongName" text="Search Album by Song Name">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield3" alignment="CENTER" layoutX="19.0" layoutY="73.0" prefHeight="20.0" prefWidth="135.0" promptText="Song Name" />
+            <Button layoutX="177.0" layoutY="98.0" mnemonicParsing="false" onAction="#searchAlbumByGenre" text="Search Album by Genre">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield4" alignment="CENTER" layoutX="163.0" layoutY="73.0" prefHeight="20.0" prefWidth="135.0" promptText="Genre" />
+            <Button layoutX="79.0" layoutY="367.0" mnemonicParsing="false" onAction="#searchSongByNumberOfListens" text="Search Song by Number of Listens">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield12" alignment="CENTER" layoutX="92.0" layoutY="341.0" prefHeight="20.0" prefWidth="135.0" promptText="Number of Listens" />
+            <Button layoutX="19.0" layoutY="43.0" mnemonicParsing="false" onAction="#searchAlbumByName" text="Search Album by Album Name">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield1" alignment="CENTER" layoutX="19.0" layoutY="18.0" prefHeight="20.0" prefWidth="135.0" promptText="Album Name" />
+            <Button layoutX="166.0" layoutY="43.0" mnemonicParsing="false" onAction="#searchAlbumByArtistName" text="Search Album by Artist Name">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfield2" alignment="CENTER" layoutX="163.0" layoutY="18.0" prefHeight="20.0" prefWidth="135.0" promptText="Artist Name" />
+            <Label layoutX="321.0" layoutY="22.0" text="Pie Chart of Albums/Songs Grouped by Number of Listens" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
